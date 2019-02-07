@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"os"
 )
@@ -36,7 +37,7 @@ func main() {
 
 func newVersion() {
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Printf("What is your name? ")
+	fmt.Printf(greetingQuestion)
 
 	for scanner.Scan() {
 		if scanner.Text() == "\n" {
@@ -47,6 +48,6 @@ func newVersion() {
 	}
 
 	if scanner.Err() != nil {
-		fmt.Println("Error in reading")
+		panic(errors.New("Scanner Error"))
 	}
 }
