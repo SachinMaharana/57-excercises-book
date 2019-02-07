@@ -1,16 +1,16 @@
-#Example Output
+# Example Output
 
 What is the input string? Homer
 Homer has 5 characters.
 
-#Constraints
+# Constraints
 
 • Be sure the output contains the original string.
 • Use a single output statement to construct the output.
 • Use a built-in function of the programming language to
 determine the length of the string.
 
-#Challenges
+# Challenges
 
 • If the user enters nothing, state that the user must enter
 something into the program.

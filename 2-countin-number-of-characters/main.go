@@ -9,7 +9,7 @@ import (
 )
 
 func count(name string) int {
-	numOfCharacters := []byte(name)
+	numOfCharacters := []rune(name)
 	return len(numOfCharacters)
 }
 
